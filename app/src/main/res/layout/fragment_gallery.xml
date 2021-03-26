@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.gallery.GalleryFragment">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/title_test"
+        android:layout_height="wrap_content"
+        android:text="Labour Force Population Per State in Nigeria"
+        android:textSize="20dp"
+        android:textAllCaps="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        />
+    <ImageView
+        android:id="@+id/underemployment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/graph"
+        android:layout_below="@id/title_test"
+         />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_below="@id/underemployment"
+            android:layout_height="wrap_content"
+            android:text="labour force 2018 total employed"
+            android:textSize="20dp"
+            android:id="@+id/employed"
+
+            android:textAllCaps="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/employedimage"
+            android:src="@drawable/plottwo"
+            android:layout_below="@id/employed"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/maptext"
+            android:layout_height="wrap_content"
+            android:text="Map of Labour force in Nigeria"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/employedimage"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:id="@+id/mapImage"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/map"
+            android:layout_below="@id/maptext"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:id="@+id/unemployment"
+            android:layout_height="wrap_content"
+            android:text="Unemployment Rate in Nigeria"
+            android:textSize="20dp"
+            android:textAllCaps="true"
+            android:layout_below="@id/mapImage"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            />
+        <ImageView
+            android:id="@+id/text_gallery"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/plotthree"
+            android:layout_below="@id/unemployment"
+            />
+    </RelativeLayout>
+</ScrollView>
